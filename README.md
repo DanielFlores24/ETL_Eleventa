@@ -4,6 +4,7 @@ Este repositorio contiene el proceso ETL (Extract, Transform, Load) para extraer
 
 
 *Estructura del proyecto*
+```
 proyect/
 │
 ├── README.md
@@ -33,7 +34,7 @@ proyect/
     ├── PRODUCTOS.csv
     ├── VENTASTICKETS_ARTICULOS.csv
     └── VENTASTICKETS.csv
-
+```
 ---
 
 *Cómo funciona*
