@@ -3,50 +3,43 @@
 Este repositorio contiene el proceso ETL (*Extract, Transform, Load*) para extraer información desde una base de datos **Firebird (.FDB)** de Eleventa, transformarla con Python y consolidarla en un archivo final para análisis y visualización.
 ---
 
-## **Estructura del proyecto**
+**Estructura del proyecto**
 proyect/
-|
-|--- README.txt
-|--- extract.py
-|--- VENTASCOMPLETO.csv
-|--- DashboardTiendas.pbix
-|
-|--- Tienda1/
-|           |
-|           |--- DEPARTAMENTOS.csv
-|           |--- PDVDATA.fdb
-|           |--- PRODUCTOS.csv
-|           |--- VENTASTICKETS_ARTICULOS.csv
-|           |--- VENTASTICKETS.csv
-
-|--- Tienda2/
-|           |
-|           |--- DEPARTAMENTOS.csv
-|           |--- PDVDATA.fdb
-|           |--- PRODUCTOS.csv
-|           |--- VENTASTICKETS_ARTICULOS.csv
-|           |--- VENTASTICKETS.csv
-|
-        .
-        .
-        .
-        .
-|--- Tienda-nesima/
-|           |
-|           |--- DEPARTAMENTOS.csv
-|           |--- PDVDATA.fdb
-|           |--- PRODUCTOS.csv
-|           |--- VENTASTICKETS_ARTICULOS.csv
-|           |--- VENTASTICKETS.csv
-|
-
+│
+├── README.md
+├── extract.py
+├── VENTASCOMPLETO.csv
+├── DashboardTrends.pbix
+│
+├── Tienda1/
+│   ├── DEPARTAMENTOS.csv
+│   ├── PDVDATA.fdb
+│   ├── PRODUCTOS.csv
+│   ├── VENTASTICKETS_ARTICULOS.csv
+│   └── VENTASTICKETS.csv
+│
+├── Tienda2/
+│   ├── DEPARTAMENTOS.csv
+│   ├── PDVDATA.fdb
+│   ├── PRODUCTOS.csv
+│   ├── VENTASTICKETS_ARTICULOS.csv
+│   └── VENTASTICKETS.csv
+│
+├── ...
+│
+└── TiendaN/
+    ├── DEPARTAMENTOS.csv
+    ├── PDVDATA.fdb
+    ├── PRODUCTOS.csv
+    ├── VENTASTICKETS_ARTICULOS.csv
+    └── VENTASTICKETS.csv
 
 ---
 
-##  **Cómo funciona**
+**Cómo funciona**
 
 1. **Extracción**  
-   El script se conecta a la base **PDVDATA.FDB** usando `fdb` y extrae las tablas principales:  
+   El script se conecta a la base **PDVDATA.FDB** usando fdb y extrae las tablas principales:  
    - VENTATICKETS
    - VENTATICKETS_ARTICULOS
    - PRODUCTOS
@@ -68,7 +61,7 @@ proyect/
 
 ---
 
-## **Datos de ejemplo **
+**Datos de ejemplo**
 
 En la carpeta /data/Tienda-nesima/ encontrarás archivos de muestra con datos ficticios para probar el flujo sin necesidad de la base real.  
 Estos datos fueron generados de forma aleatoria para mantener confidencialidad.
@@ -76,7 +69,7 @@ Estos datos fueron generados de forma aleatoria para mantener confidencialidad.
 ---
 
 
-## **Requisitos**
+**Requisitos**
 
 - Python 3.8+
 - Librerías: fdb, pandas
